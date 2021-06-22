@@ -35,7 +35,8 @@ provider "aws" {
 }
 
 module "module_test" {
-  source = "../aws-vpc-launch"
+  source = "smc181002/vpc/aws"
+  version = "1.0.0"
 
   vpc_name = "tf_vpc"
   vpc_cidr_block = "10.0.0.0/16"
